@@ -10,13 +10,23 @@ int main()
     int num;
 
     cout << "Enter a number:\n";
+
     cin>> num;
+    cout << "Type 'MUL' to multiply or 'ADD' to add all number from 1 to "<<num<<":\n";
+
+    string op;
+
+    cin >> op;
 
     int result = 0;
 
     for (int i = 0; i <= num; i++)
     {
-      if (i%3==0||i%5==0)
+      if (op.compare("MUL") == 0)
+      {
+        result *= i;
+      }
+      else if (op.compare("ADD") == 0)
       {
         result += i;
       }
