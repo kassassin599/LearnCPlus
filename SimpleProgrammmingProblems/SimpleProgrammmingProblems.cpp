@@ -10,8 +10,19 @@ int main()
     std::string name;
 
     std::cout << "Enter your name:\n";
-    getline(cin, name);
-    std::cout << "Hello "+name+"\n";
+    std::cin>> name;
+
+    int resultAlice = name.compare("Alice");
+    int resultBob = name.compare("Bob");
+
+    if (resultAlice == 0)
+    {
+      std::cout << "Hello " + name + "\n";
+    }
+    else if (resultBob == 0)
+    {
+      std::cout << "Hello " + name + "\n";
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
