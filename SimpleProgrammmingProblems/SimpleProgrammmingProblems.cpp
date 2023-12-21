@@ -9,30 +9,18 @@ int main()
 {
     int num;
 
-    cout << "Enter a number:\n";
-
-    cin>> num;
-    cout << "Type 'MUL' to multiply or 'ADD' to add all number from 1 to "<<num<<":\n";
-
-    string op;
-
-    cin >> op;
-
     int result = 0;
 
-    for (int i = 0; i <= num; i++)
+    for (num = 2; num <= 12; num++)
     {
-      if (op.compare("MUL") == 0)
+      for (int i = 1; i <= 10; i++)
       {
-        result *= i;
+        result = num * i;
+        std::cout <<result<<",";
       }
-      else if (op.compare("ADD") == 0)
-      {
-        result += i;
-      }
+      cout << "\n";
     }
     
-    std::cout << "Result is: " << result;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
