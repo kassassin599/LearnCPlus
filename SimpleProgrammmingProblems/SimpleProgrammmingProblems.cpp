@@ -7,22 +7,19 @@ using namespace std;
 
 int main()
 {
-    std::string name;
+    int num;
 
-    std::cout << "Enter your name:\n";
-    std::cin>> name;
+    cout << "Enter a number:\n";
+    cin>> num;
 
-    int resultAlice = name.compare("Alice");
-    int resultBob = name.compare("Bob");
+    int result = 0;
 
-    if (resultAlice == 0)
+    for (int i = 0; i <= num; i++)
     {
-      std::cout << "Hello " + name + "\n";
+      result += i;
     }
-    else if (resultBob == 0)
-    {
-      std::cout << "Hello " + name + "\n";
-    }
+    
+    std::cout << "Result is: " << result;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
